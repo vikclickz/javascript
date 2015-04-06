@@ -1,0 +1,15 @@
+function assignTorpedo(name,passengerArr){
+   
+    for(var i=0; i<passengerArr.length;i++){
+        if(passengerArr[i] == name){
+            return function(){
+                alert("Hello : "+name+" Man your post at torpedo "+(i+1)+"!");
+            };
+        }
+    }
+    return torpedoAssignment;
+}
+
+var passengerArr = ["Vikrant","Josh","Peter","Miles"];
+var giveAssignment = assignTorpedo("Peter",passengerArr);
+giveAssignment();
