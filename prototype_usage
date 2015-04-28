@@ -1,0 +1,16 @@
+function Person(name,age){
+this.name = name;
+    this.age = age;
+    this.calcBonus = function(bonus){
+        return bonus + 1000;
+    }
+}
+
+var jessi = new Person("Vik", 23);
+alert(jessi.name);
+alert(jessi.calcBonus(5));
+Person.prototype.fullName = function(){
+return this.name + " " + this.age;
+}
+
+alert(jessi.fullName());
